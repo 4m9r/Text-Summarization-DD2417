@@ -1,0 +1,50 @@
+Rouge Score for Test sample 23959::
+my dogs absolutely love these treats putting them into a dog treat ball kept them busy for quite awhile  speedy delivery great product  perfect
+Rouge-1: Score(precision=0.01680672268907563, recall=0.5, fmeasure=0.03252032520325203) 
+Rouge-L: Score(precision=0.01680672268907563, recall=0.5, fmeasure=0.03252032520325203)
+
+Rouge Score for Test sample 4471::
+this tea was recommended to us so decided to give it a try i am so glad we did it has a very delicate taste and is lightly floral without being overwhelming perfect with a little bit of splenda it shipped fast and the price was right
+Rouge-1: Score(precision=0.01818181818181818, recall=0.5, fmeasure=0.03508771929824561) 
+Rouge-L: Score(precision=0.01818181818181818, recall=0.5, fmeasure=0.03508771929824561)
+
+Rouge Score for Test sample 1853::
+be carefuleven though this is listed under gluten free section it is not gluten free
+Rouge-1: Score(precision=0.02586206896551724, recall=0.25, fmeasure=0.046875) 
+Rouge-L: Score(precision=0.02586206896551724, recall=0.25, fmeasure=0.046875)
+
+Rouge Score for Test sample 19878::
+we got a senseo machine 5 years ago as a gift from a friend and would never go back to regular drip coffee  this is full rich and has a wonderful little foam on top
+Rouge-1: Score(precision=0.017094017094017096, recall=0.2222222222222222, fmeasure=0.03174603174603175) 
+Rouge-L: Score(precision=0.017094017094017096, recall=0.2222222222222222, fmeasure=0.03174603174603175)
+
+Rouge Score for Test sample 5788::
+convenient and at a good price from amazon i live in a meatloving area of the country where they think tofu is some kind of glue im glad amazon stocks this item by the case eat more tofu
+Rouge-1: Score(precision=0.022988505747126436, recall=0.5, fmeasure=0.04395604395604396) 
+Rouge-L: Score(precision=0.022988505747126436, recall=0.5, fmeasure=0.04395604395604396)
+
+Rouge Score for Test sample 23785::
+im not surprised that this coffee is greatbr br when you use it with the right grinder and the right espresso machine to achieve a 30seconds double shot you get incredible amount of crema and superb tastebr br amazon shipping was super fast too
+Rouge-1: Score(precision=0.017094017094017096, recall=0.4, fmeasure=0.03278688524590164) 
+Rouge-L: Score(precision=0.017094017094017096, recall=0.4, fmeasure=0.03278688524590164)
+
+Rouge Score for Test sample 22511::
+i have been buying melitta coffee for some time now it is above average and at a descent price for my taste buds the flavor is very good coffee may vary for different people so this is my view and it is always at a good price hope this helps
+Rouge-1: Score(precision=0.01694915254237288, recall=0.5, fmeasure=0.03278688524590164) 
+Rouge-L: Score(precision=0.01694915254237288, recall=0.5, fmeasure=0.03278688524590164)
+
+Rouge Score for Test sample 20802::
+this is by far the best flavor on the market the flavor is perfect not to weak like most available products
+Rouge-1: Score(precision=0.017391304347826087, recall=0.5, fmeasure=0.03361344537815126) 
+Rouge-L: Score(precision=0.017391304347826087, recall=0.5, fmeasure=0.03361344537815126)
+
+Rouge Score for Test sample 8137::
+we find these individual packets to be very useful and the sauce is very tasty  i recommend it
+Rouge-1: Score(precision=0.03, recall=0.6, fmeasure=0.05714285714285714) 
+Rouge-L: Score(precision=0.03, recall=0.6, fmeasure=0.05714285714285714)
+
+Rouge Score for Test sample 23770::
+my 14 month old loves this stuff  i tasted it and it seems healthy and delicious enough  my only reservation is about not being able to visually see and inspect what shes ingesting with these new tetra packs
+Rouge-1: Score(precision=0.021505376344086023, recall=0.5, fmeasure=0.04123711340206186) 
+Rouge-L: Score(precision=0.021505376344086023, recall=0.5, fmeasure=0.04123711340206186)
+
