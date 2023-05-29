@@ -25,8 +25,8 @@ df.drop(
 df = df.dropna()
 # df = df[:10000]
 
-X = list(df["Text"])
-Y = list(df["Summary"])
+source_X = list(df["Text"])
+source_Y = list(df["Summary"])
 
 # index
 w2i = defaultdict(None)
@@ -63,20 +63,20 @@ def index(lines):
 
 max_len = 250
 
-X = [
-    x
-    for x, y in zip(X, Y)
-    if len(split_line(x)) < max_len and len(split_line(y)) < max_len
-]
-Y = [
-    y
-    for x, y in zip(X, Y)
-    if len(split_line(x)) < max_len and len(split_line(y)) < max_len
-]
+X = []
+Y = []
+
+for x, y in zip(source_X, source_Y):
+    line_x = split_line(x)
+    line_y = split_line(y)
+    if len(line_x) < max_len and len(line_y) < max_len:
+        X.append(x)
+        Y.append(y)
+
+print(X[0], Y[0])
 
 build_vocab(X)
 build_vocab(Y)
-
 X = index(X)
 Y = index(Y)
 
@@ -88,6 +88,5 @@ data = {"input": X, "target": Y, "w2i": w2i, "i2w": i2w}
 with open("data/char_dataset.json", "w") as f:
     f.write(json.dumps(data))
 
-print(w2i.keys())
 print("Total number of words: ", len(w2i))
 print("Total number of datapoints: ", len(X))

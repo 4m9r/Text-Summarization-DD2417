@@ -10,6 +10,8 @@ from dataset import *
 import random
 
 torch.multiprocessing.set_sharing_strategy("file_system")
+torch.manual_seed(0)
+random.seed(0)
 
 # load dataset
 dataset = SumDataset(text_max_len=256, summary_max_len=128, char_level=True)
@@ -22,9 +24,16 @@ model = SumTransformer.load_from_checkpoint(
 )
 model.eval()
 
+x, y, z = dataset[0]
+print("".join([dataset.i2w[str(c.item())] for c in x]))
+print("".join([dataset.i2w[str(c.item())] for c in y]))
+print("".join([dataset.i2w[str(c.item())] for c in z]))
+
+"""
 s = ""
 for i in range(10):
-    index = random.randint(len(dataset_test))
+    index = random.randint(0, len(dataset_test))
+
     input_text = dataset_test[index][0]
     original_sum = dataset_test[index][1]
 
@@ -32,8 +41,8 @@ for i in range(10):
     true_summary = [dataset.i2w[str(g.item())] for g in original_sum]
     print(f"Test sample {index}:\n", "".join(text))
     print("Original summary:\n", "".join(true_summary))
-    s += "Input text:\n", "".join(text)
-    s += "Original summary:\n", "".join(true_summary)
+    s += f"Test sample {index}:\n" + "".join(text)
+    s += "\nOriginal summary:\n" + "".join(true_summary)
 
     gen = model.inference(
         input_text,
@@ -46,8 +55,9 @@ for i in range(10):
 
     summary = [dataset.i2w[str(g)] for g in gen]
     print("Generated summary:\n", "".join(summary))
-    s += "Generated summary:\n", "".join(summary)
-    s += "\n"
+    s += "\nGenerated summary:\n" + "".join(summary)
+    s += "\n\n"
 
-with open("results_topp.txt", "w") as f:
+with open("results_topk.txt", "w") as f:
     f.write(s)
+"""

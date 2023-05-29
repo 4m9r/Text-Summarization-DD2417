@@ -31,6 +31,8 @@ Y = list(df["Summary"])
 w2i = defaultdict(None)
 i2w = defaultdict(None)
 
+max_len = 30
+
 
 def split_line(line):
     line = line.lower()
@@ -38,6 +40,8 @@ def split_line(line):
         line = line.replace(c, "")
     line = line.split(" ")
     line = list(filter(None, line))
+    if len(line) > max_len:
+        return None
     return line
 
 
@@ -56,7 +60,8 @@ def index(lines):
     data = []
     for line in tqdm(lines):
         line = split_line(line)
-        data.append([w2i[w] for w in line])
+        if line is not None:
+            data.append([w2i[w] for w in line])
     return data
 
 
