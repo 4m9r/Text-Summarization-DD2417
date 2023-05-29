@@ -47,34 +47,3 @@ Rouge Score for Test sample 11732::
 very good chocolatesbr would recomend these chocolatesbr smoth and creamy excellent value br every one in our family has enjoyed them so much we ordered them  again  again 
 Rouge-1: Score(precision=0.3333333333333333, recall=0.3333333333333333, fmeasure=0.3333333333333333) 
 Rouge-L: Score(precision=0.3333333333333333, recall=0.3333333333333333, fmeasure=0.3333333333333333)
-
-Rouge-2: Score(precision=0.0, recall=0.0, fmeasure=0.0) 
-
-
-Rouge-2: Score(precision=0.0, recall=0.0, fmeasure=0.0) 
-
-
-Rouge-2: Score(precision=0.0, recall=0.0, fmeasure=0.0) 
-
-
-Rouge-2: Score(precision=0.0, recall=0.0, fmeasure=0.0) 
-
-
-Rouge-2: Score(precision=0.0, recall=0.0, fmeasure=0.0) 
-
-
-Rouge-2: Score(precision=0.0, recall=0.0, fmeasure=0.0) 
-
-
-Rouge-2: Score(precision=1.0, recall=1.0, fmeasure=1.0) 
-
-
-Rouge-2: Score(precision=0.0, recall=0.0, fmeasure=0.0) 
-
-
-Rouge-2: Score(precision=0.0, recall=0.0, fmeasure=0.0) 
-
-
-Rouge-2: Score(precision=0.0, recall=0.0, fmeasure=0.0) 
-
-
