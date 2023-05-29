@@ -46,20 +46,18 @@ def split_line(line):
 def build_vocab(lines):
     for line in tqdm(lines):
         line = split_line(line)
-        if line is not None:
-            for tok in line:
-                if not tok in w2i:
-                    id = len(w2i)
-                    w2i[tok] = id
-                    i2w[id] = tok
+        for tok in line:
+            if not tok in w2i:
+                id = len(w2i)
+                w2i[tok] = id
+                i2w[id] = tok
 
 
 def index(lines):
     data = []
     for line in tqdm(lines):
         line = split_line(line)
-        if line is not None:
-            data.append([w2i[w] for w in line])
+        data.append([w2i[w] for w in line])
     return data
 
 
