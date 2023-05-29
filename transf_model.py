@@ -37,17 +37,16 @@ class SumTransformer(pl.LightningModule):
         self,
         vocab_size: int,
         embedding_size: int,
-        max_len: int,
         layers: int,
         attention_heads: int,
         hidden_size: int,
         dropout: float,
+        pad_index: int,
     ):
         super().__init__()
 
         self.vocab_size = vocab_size
         self.embedding_size = embedding_size
-        self.max_len = max_len
         self.layers = layers
         self.attention_heads = attention_heads
         self.hidden_size = hidden_size
@@ -56,24 +55,35 @@ class SumTransformer(pl.LightningModule):
         self.embedding = nn.Embedding(vocab_size, embedding_size)
 
         self.positional_encoding = PositionalEncoding(
-            d_model=embedding_size, dropout=dropout, max_len=max_len
+            d_model=embedding_size, dropout=dropout
         )
 
-        self.transformer = nn.Transformer(
+        encoder_layer = nn.TransformerEncoderLayer(
             d_model=embedding_size,
             nhead=attention_heads,
-            num_encoder_layers=layers,
-            num_decoder_layers=layers,
-            dim_feedforward=hidden_size,
             dropout=dropout,
-            activation="relu",
             batch_first=True,
+        )
+        self.encoder = nn.TransformerEncoder(
+            encoder_layer=encoder_layer,
+            num_layers=layers,
+        )
+
+        decoder_layer = nn.TransformerDecoderLayer(
+            d_model=embedding_size,
+            nhead=attention_heads,
+            dropout=dropout,
+            batch_first=True,
+        )
+        self.decoder = nn.TransformerDecoder(
+            decoder_layer=decoder_layer,
+            num_layers=layers,
         )
 
         self.prediction_layer = nn.Linear(hidden_size, vocab_size)
         self.softmax = nn.Softmax(dim=-1)
 
-        self.loss = nn.CrossEntropyLoss()
+        self.loss = nn.CrossEntropyLoss(ignore_index=pad_index)
         self.save_hyperparameters()
 
     # (B, L)
@@ -84,16 +94,22 @@ class SumTransformer(pl.LightningModule):
         # (B, L, E)
         embedded_input = self.positional_encoding(embedded_input)
 
+        # encode
         mask = nn.Transformer.generate_square_subsequent_mask(
-            self.max_len, device=X.device
+            X.shape[1], device=X.device
         ).bool()
 
+        latent = self.encoder(embedded_input, mask=mask)
+
+        # decode
         embedded_target = self.embedding(Y)
         embedded_target = self.positional_encoding(embedded_target)
+
+        mask = nn.Transformer.generate_square_subsequent_mask(
+            Y.shape[1], device=X.device
+        ).bool()
         # (B, L, H)
-        transf_out = self.transformer(
-            embedded_input, embedded_target, src_mask=mask, tgt_mask=mask
-        )
+        transf_out = self.decoder(tgt=embedded_target, memory=latent, tgt_mask=mask)
 
         # (B, L, V)
         logits = self.prediction_layer(transf_out)
@@ -101,23 +117,23 @@ class SumTransformer(pl.LightningModule):
         return logits
 
     def training_step(self, train_batch, batch_idx):
-        x, y = train_batch
+        x, y, z = train_batch
         x_hat = self.forward(x, y).swapaxes(1, 2)
-        loss = self.loss(x_hat, y)
+        loss = self.loss(x_hat, z)
         self.log("train_loss", loss)
         return loss
 
     def validation_step(self, val_batch, batch_idx):
-        x, y = val_batch
+        x, y, z = val_batch
         x_hat = self.forward(x, y).swapaxes(1, 2)
-        loss = self.loss(x_hat, y)
+        loss = self.loss(x_hat, z)
         self.log("val_loss", loss)
         return loss
 
     def test_step(self, test_batch, batch_idx):
-        x, y = test_batch
+        x, y, z = test_batch
         x_hat = self.forward(x, y).swapaxes(1, 2)
-        loss = self.loss(x_hat, y)
+        loss = self.loss(x_hat, z)
         self.log("test_loss", loss)
         return loss
 
@@ -128,33 +144,41 @@ class SumTransformer(pl.LightningModule):
         eos_idx,
         max_len=100,
         mode="greedy",
-        device="cpu",
         temperature=1,
     ):
+        X = X.to(self.device)
         X = X.unsqueeze(0)
         embedded_input = self.embedding(X)
         embedded_input = self.positional_encoding(embedded_input)
 
         mask = nn.Transformer.generate_square_subsequent_mask(
-            self.max_len, device=X.device
-        ).bool()
+            X.shape[1], device=self.device
+        ).to(torch.bool)
 
-        transf_encoder_out = self.transformer.encoder(embedded_input, mask=mask)
+        transf_encoder_out = self.encoder(embedded_input, mask=mask)
 
         with torch.no_grad():
             generation = [sos_idx]
             t = 0
             while t < max_len:
-                input = torch.LongTensor(generation).to(device).unsqueeze(0)
+                input = torch.LongTensor(generation).to(self.device).unsqueeze(0)
+                embedded_input = self.embedding(input)
+                embedded_input = self.positional_encoding(embedded_input)
 
-                out = self.transformer.decoder(input, transf_encoder_out)[:, -1, :]
+                mask = nn.Transformer.generate_square_subsequent_mask(
+                    len(generation), device=self.device
+                ).to(torch.bool)
 
-                tok = self.sample(out, mode=mode, T=temperature)
+                out = self.decoder(
+                    tgt=embedded_input, memory=transf_encoder_out, tgt_mask=mask
+                )
+                logits = self.prediction_layer(out)[:, -1, :]
+
+                tok = self.sample(logits, mode=mode, T=temperature)
                 generation.append(tok)
 
                 if tok == eos_idx:
                     break
-
                 t += 1
 
             return generation
