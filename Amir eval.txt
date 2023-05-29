@@ -1,4 +1,4 @@
-Topk:
+Topp:
 #sample, score
 18135, 1
 18231, 0
