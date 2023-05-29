@@ -1,50 +1,50 @@
-Rouge Score for Test sample 6866::
-i was buying quaker oats granola bars but these nature valley chewy bars are better tasting they make a great snack when im on the go chocolate peanuts and raisinsit doesnt get any better
-Rouge-1: Score(precision=0.01680672268907563, recall=0.3333333333333333, fmeasure=0.032) 
-Rouge-L: Score(precision=0.01680672268907563, recall=0.3333333333333333, fmeasure=0.032)
+Rouge Score for Test sample 18135::
+this was purchased as a gift  my sister said they tasted very good and were really cute  however for the  you pay she only got 8 cookies
+Rouge-1: Score(precision=0.019230769230769232, recall=0.5, fmeasure=0.037037037037037035) 
+Rouge-L: Score(precision=0.019230769230769232, recall=0.5, fmeasure=0.037037037037037035)
 
-Rouge Score for Test sample 7233::
-this is the best hot and sour soup mix we have ever found  we add a few sliced mushrooms and often a little pork andor seafood and its nothing short of wonderful
-Rouge-1: Score(precision=0.017857142857142856, recall=0.5, fmeasure=0.03448275862068965) 
-Rouge-L: Score(precision=0.017857142857142856, recall=0.5, fmeasure=0.03448275862068965)
+Rouge Score for Test sample 18231::
+this is the third or fourth time weve hit up an amazon grocery sale to get these cheap  not too many are broken and the price is good
+Rouge-1: Score(precision=0.02, recall=0.5, fmeasure=0.038461538461538464) 
+Rouge-L: Score(precision=0.02, recall=0.5, fmeasure=0.038461538461538464)
 
-Rouge Score for Test sample 20604::
-these gave me a headache too much sugar and other ingredients that didnt sit well  i would not recommend to someone trying to eat healthier
-Rouge-1: Score(precision=0.018867924528301886, recall=0.5, fmeasure=0.03636363636363636) 
-Rouge-L: Score(precision=0.018867924528301886, recall=0.5, fmeasure=0.03636363636363636)
+Rouge Score for Test sample 5130::
+rarely find the baby fruit i used to make a baby food cake so ordered it fom amazoncame very promptly and now i have plenty to make several cakes  good deal  pat thompson
+Rouge-1: Score(precision=0.017391304347826087, recall=0.3333333333333333, fmeasure=0.03305785123966942) 
+Rouge-L: Score(precision=0.017391304347826087, recall=0.3333333333333333, fmeasure=0.03305785123966942)
 
-Rouge Score for Test sample 7953::
-everthing is accessable neat and tidy  everyone can find what they want with a huge searchbr i can see at a glance what i need to buy easy peasy
-Rouge-1: Score(precision=0.018018018018018018, recall=0.5, fmeasure=0.034782608695652174) 
-Rouge-L: Score(precision=0.018018018018018018, recall=0.5, fmeasure=0.034782608695652174)
+Rouge Score for Test sample 20592::
+i bought these as a prop for a 1920s themed party  they made a great party favorprop and quite a few people asked where i had gotten them as they had not seen candy cigarettes in many years
+Rouge-1: Score(precision=0.020202020202020204, recall=0.3333333333333333, fmeasure=0.0380952380952381) 
+Rouge-L: Score(precision=0.020202020202020204, recall=0.3333333333333333, fmeasure=0.0380952380952381)
 
-Rouge Score for Test sample 12413::
-im usually impressed with this brands stevia products but not with these individually packed ones these dont taste sweet in the slightest tastes more like paper also the ones i got were packed in a white wrapper not blue like the picture shows
-Rouge-1: Score(precision=0.019417475728155338, recall=0.4, fmeasure=0.037037037037037035) 
-Rouge-L: Score(precision=0.019417475728155338, recall=0.4, fmeasure=0.037037037037037035)
+Rouge Score for Test sample 9444::
+i use a packet every week mixed in 16 oz  nonfat sour cream nothing else added and take it to work with baby carrots and other cut up veggies  low cal snacking  great to munch on while playing ghost recon on xbox live killah mom
+Rouge-1: Score(precision=0.020833333333333332, recall=0.6666666666666666, fmeasure=0.0404040404040404) 
+Rouge-L: Score(precision=0.020833333333333332, recall=0.6666666666666666, fmeasure=0.0404040404040404)
 
-Rouge Score for Test sample 6072::
-these things are pricey but they are a super yummy healthy snack weve tried several brands and this one is handsdown our favorite
-Rouge-1: Score(precision=0.018518518518518517, recall=0.4, fmeasure=0.035398230088495575) 
-Rouge-L: Score(precision=0.018518518518518517, recall=0.4, fmeasure=0.035398230088495575)
+Rouge Score for Test sample 7771::
+if you are looking for a strong wake me up kind of coffee this one does it for me  it is very strong yet smooth
+Rouge-1: Score(precision=0.016129032258064516, recall=0.5, fmeasure=0.03125) 
+Rouge-L: Score(precision=0.016129032258064516, recall=0.5, fmeasure=0.03125)
 
-Rouge Score for Test sample 6188::
-what can i say  this is the best dark french roast to be had  the whole beans stay fresh longer  i drink it every day
-Rouge-1: Score(precision=0.028169014084507043, recall=0.5, fmeasure=0.05333333333333334) 
-Rouge-L: Score(precision=0.028169014084507043, recall=0.5, fmeasure=0.05333333333333334)
+Rouge Score for Test sample 9597::
+these taste great not too sweet and they dont stain your tounge the kids love em too the price is right too now i wont feel guilty when i give the kids a treat not many products are on the market without dyes try em youll really like em
+Rouge-1: Score(precision=0.01652892561983471, recall=0.6666666666666666, fmeasure=0.03225806451612903) 
+Rouge-L: Score(precision=0.01652892561983471, recall=0.6666666666666666, fmeasure=0.03225806451612903)
 
-Rouge Score for Test sample 6426::
-been a long time since i had a fresh tootsie roll  these are great
-Rouge-1: Score(precision=0.024390243902439025, recall=0.2857142857142857, fmeasure=0.0449438202247191) 
-Rouge-L: Score(precision=0.024390243902439025, recall=0.2857142857142857, fmeasure=0.0449438202247191)
+Rouge Score for Test sample 22798::
+i rarely write reviews but when i saw there was only 1 other comment i had to chip in  these are delicious  probably the best bar ive had
+Rouge-1: Score(precision=0.02040816326530612, recall=0.2857142857142857, fmeasure=0.038095238095238085) 
+Rouge-L: Score(precision=0.02040816326530612, recall=0.2857142857142857, fmeasure=0.038095238095238085)
 
-Rouge Score for Test sample 7369::
-if you love to cook and want to use the very best ingredientsyou have to use pastene tomatoes  for sauces there is none better  if i dont have pastene i wont cook with any other tomatoes
-Rouge-1: Score(precision=0.017699115044247787, recall=0.3333333333333333, fmeasure=0.033613445378151266) 
-Rouge-L: Score(precision=0.017699115044247787, recall=0.3333333333333333, fmeasure=0.033613445378151266)
+Rouge Score for Test sample 16141::
+tastes great  no weird aftertaste as with some sugar free products  im so glad i ordered this  im not even a fan of hot cider but this stuff is yummy and it smells good too worth the price
+Rouge-1: Score(precision=0.015873015873015872, recall=0.5, fmeasure=0.03076923076923077) 
+Rouge-L: Score(precision=0.015873015873015872, recall=0.5, fmeasure=0.03076923076923077)
 
-Rouge Score for Test sample 5148::
-the senseo douwe egberts decaf coffee pods are a great deal and  we love them  this is the best price thst we have found and have been buying them for years and will continue to do sobr mike  mary
-Rouge-1: Score(precision=0.01834862385321101, recall=0.4, fmeasure=0.03508771929824561) 
-Rouge-L: Score(precision=0.01834862385321101, recall=0.4, fmeasure=0.03508771929824561)
+Rouge Score for Test sample 23485::
+i received the product on time my dogs absolutely love thesebr cookies i will recommend them to anyonethey smell great
+Rouge-1: Score(precision=0.017857142857142856, recall=0.2222222222222222, fmeasure=0.03305785123966942) 
+Rouge-L: Score(precision=0.017857142857142856, recall=0.2222222222222222, fmeasure=0.03305785123966942)
 
