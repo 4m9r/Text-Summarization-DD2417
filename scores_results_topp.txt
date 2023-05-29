@@ -1,50 +1,80 @@
-Rouge Score for Test sample 18135::
-this was purchased as a gift  my sister said they tasted very good and were really cute  however for the  you pay she only got 8 cookies
-Rouge-1: Score(precision=0.019230769230769232, recall=0.5, fmeasure=0.037037037037037035) 
-Rouge-L: Score(precision=0.019230769230769232, recall=0.5, fmeasure=0.037037037037037035)
+Rouge Score for Test sample 12623::
+the perfect size tubsi get two portions from this tubserve with fruit and baby cerealkeeps him regular
+Rouge-1: Score(precision=0.3333333333333333, recall=0.3333333333333333, fmeasure=0.3333333333333333) 
+Rouge-L: Score(precision=0.3333333333333333, recall=0.3333333333333333, fmeasure=0.3333333333333333)
 
-Rouge Score for Test sample 18231::
-this is the third or fourth time weve hit up an amazon grocery sale to get these cheap  not too many are broken and the price is good
-Rouge-1: Score(precision=0.02, recall=0.5, fmeasure=0.038461538461538464) 
-Rouge-L: Score(precision=0.02, recall=0.5, fmeasure=0.038461538461538464)
+Rouge Score for Test sample 13781::
+where else can you save 30000 on tea who can pass up a bargain like that if only i had 120000 to blow on tea dang this gets five stars i says
+Rouge-1: Score(precision=0.2, recall=0.3333333333333333, fmeasure=0.25) 
+Rouge-L: Score(precision=0.2, recall=0.3333333333333333, fmeasure=0.25)
 
-Rouge Score for Test sample 5130::
-rarely find the baby fruit i used to make a baby food cake so ordered it fom amazoncame very promptly and now i have plenty to make several cakes  good deal  pat thompson
-Rouge-1: Score(precision=0.017391304347826087, recall=0.3333333333333333, fmeasure=0.03305785123966942) 
-Rouge-L: Score(precision=0.017391304347826087, recall=0.3333333333333333, fmeasure=0.03305785123966942)
+Rouge Score for Test sample 1326::
+this is a great gf mix i dont have to worry about combining a lot of different types of gf flours together it does have nuts in them for those who have allergies
+Rouge-1: Score(precision=0.3333333333333333, recall=0.5, fmeasure=0.4) 
+Rouge-L: Score(precision=0.3333333333333333, recall=0.5, fmeasure=0.4)
 
-Rouge Score for Test sample 20592::
-i bought these as a prop for a 1920s themed party  they made a great party favorprop and quite a few people asked where i had gotten them as they had not seen candy cigarettes in many years
-Rouge-1: Score(precision=0.020202020202020204, recall=0.3333333333333333, fmeasure=0.0380952380952381) 
-Rouge-L: Score(precision=0.020202020202020204, recall=0.3333333333333333, fmeasure=0.0380952380952381)
+Rouge Score for Test sample 8484::
+our labradorborder collie mix is a pretty vigorous chewer  he gnawed on this for several weeks before it finally had to be discarded  all in all  a pretty durable chew toy
+Rouge-1: Score(precision=0.125, recall=0.5, fmeasure=0.2) 
+Rouge-L: Score(precision=0.125, recall=0.5, fmeasure=0.2)
 
-Rouge Score for Test sample 9444::
-i use a packet every week mixed in 16 oz  nonfat sour cream nothing else added and take it to work with baby carrots and other cut up veggies  low cal snacking  great to munch on while playing ghost recon on xbox live killah mom
-Rouge-1: Score(precision=0.020833333333333332, recall=0.6666666666666666, fmeasure=0.0404040404040404) 
-Rouge-L: Score(precision=0.020833333333333332, recall=0.6666666666666666, fmeasure=0.0404040404040404)
+Rouge Score for Test sample 16753::
+does not taste like peanut butter at all  leaves a foreign taste in your mouth that does not taste natural  avoid this product if youre looking for a viable alternative for peanut butter
+Rouge-1: Score(precision=0.5, recall=0.2, fmeasure=0.28571428571428575) 
+Rouge-L: Score(precision=0.5, recall=0.2, fmeasure=0.28571428571428575)
 
-Rouge Score for Test sample 7771::
-if you are looking for a strong wake me up kind of coffee this one does it for me  it is very strong yet smooth
-Rouge-1: Score(precision=0.016129032258064516, recall=0.5, fmeasure=0.03125) 
-Rouge-L: Score(precision=0.016129032258064516, recall=0.5, fmeasure=0.03125)
+Rouge Score for Test sample 15922::
+my sister brought me some of this chocolate from france  it is the best i have ever tastedbr it is a bit pricey but if you love great hot chocolate you will enjoy thisheavenly
+Rouge-1: Score(precision=0.3333333333333333, recall=0.16666666666666666, fmeasure=0.2222222222222222) 
+Rouge-L: Score(precision=0.3333333333333333, recall=0.16666666666666666, fmeasure=0.2222222222222222)
 
-Rouge Score for Test sample 9597::
-these taste great not too sweet and they dont stain your tounge the kids love em too the price is right too now i wont feel guilty when i give the kids a treat not many products are on the market without dyes try em youll really like em
-Rouge-1: Score(precision=0.01652892561983471, recall=0.6666666666666666, fmeasure=0.03225806451612903) 
-Rouge-L: Score(precision=0.01652892561983471, recall=0.6666666666666666, fmeasure=0.03225806451612903)
+Rouge Score for Test sample 13268::
+one of my favoriteshopefully this continues at a reasonable price each kcup brews perfectly well pleasedwill continue to order as long as it is a suscribe and save item
+Rouge-1: Score(precision=1.0, recall=1.0, fmeasure=1.0) 
+Rouge-L: Score(precision=1.0, recall=1.0, fmeasure=1.0)
 
-Rouge Score for Test sample 22798::
-i rarely write reviews but when i saw there was only 1 other comment i had to chip in  these are delicious  probably the best bar ive had
-Rouge-1: Score(precision=0.02040816326530612, recall=0.2857142857142857, fmeasure=0.038095238095238085) 
-Rouge-L: Score(precision=0.02040816326530612, recall=0.2857142857142857, fmeasure=0.038095238095238085)
+Rouge Score for Test sample 9938::
+this stuff was disgusting  tasted nothing like mudslides i have had before  maybe i should check the ingredients again perhaps it actually contains mud  avoid this product at all costs
+Rouge-1: Score(precision=0.125, recall=0.25, fmeasure=0.16666666666666666) 
+Rouge-L: Score(precision=0.125, recall=0.25, fmeasure=0.16666666666666666)
 
-Rouge Score for Test sample 16141::
-tastes great  no weird aftertaste as with some sugar free products  im so glad i ordered this  im not even a fan of hot cider but this stuff is yummy and it smells good too worth the price
-Rouge-1: Score(precision=0.015873015873015872, recall=0.5, fmeasure=0.03076923076923077) 
-Rouge-L: Score(precision=0.015873015873015872, recall=0.5, fmeasure=0.03076923076923077)
+Rouge Score for Test sample 15617::
+this is one of our favorite teas  it has a good flavor and it is not weakbr highly recommend it
+Rouge-1: Score(precision=0.2, recall=0.3333333333333333, fmeasure=0.25) 
+Rouge-L: Score(precision=0.2, recall=0.3333333333333333, fmeasure=0.25)
 
-Rouge Score for Test sample 23485::
-i received the product on time my dogs absolutely love thesebr cookies i will recommend them to anyonethey smell great
-Rouge-1: Score(precision=0.017857142857142856, recall=0.2222222222222222, fmeasure=0.03305785123966942) 
-Rouge-L: Score(precision=0.017857142857142856, recall=0.2222222222222222, fmeasure=0.03305785123966942)
+Rouge Score for Test sample 11732::
+very good chocolatesbr would recomend these chocolatesbr smoth and creamy excellent value br every one in our family has enjoyed them so much we ordered them  again  again 
+Rouge-1: Score(precision=0.3333333333333333, recall=0.3333333333333333, fmeasure=0.3333333333333333) 
+Rouge-L: Score(precision=0.3333333333333333, recall=0.3333333333333333, fmeasure=0.3333333333333333)
+
+Rouge-2: Score(precision=0.0, recall=0.0, fmeasure=0.0) 
+
+
+Rouge-2: Score(precision=0.0, recall=0.0, fmeasure=0.0) 
+
+
+Rouge-2: Score(precision=0.0, recall=0.0, fmeasure=0.0) 
+
+
+Rouge-2: Score(precision=0.0, recall=0.0, fmeasure=0.0) 
+
+
+Rouge-2: Score(precision=0.0, recall=0.0, fmeasure=0.0) 
+
+
+Rouge-2: Score(precision=0.0, recall=0.0, fmeasure=0.0) 
+
+
+Rouge-2: Score(precision=1.0, recall=1.0, fmeasure=1.0) 
+
+
+Rouge-2: Score(precision=0.0, recall=0.0, fmeasure=0.0) 
+
+
+Rouge-2: Score(precision=0.0, recall=0.0, fmeasure=0.0) 
+
+
+Rouge-2: Score(precision=0.0, recall=0.0, fmeasure=0.0) 
+
 
