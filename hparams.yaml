@@ -1,0 +1,7 @@
+attention_heads: 4
+dropout: 0.2
+embedding_size: 64
+hidden_size: 64
+layers: 3
+pad_index: 39
+vocab_size: 40
